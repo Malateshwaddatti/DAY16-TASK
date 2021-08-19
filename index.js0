@@ -1,0 +1,93 @@
+var table=document.createElement('table');
+table.setAttribute('class','table');
+
+var thead=document.createElement('thead');
+thead.setAttribute('class','thead-dark');
+
+var tr=document.createElement('tr');
+var th0=createtrth('th','Id');
+var th1=createtrth('th','First Name');
+var th2=createtrth('th', 'Last Name');
+var th3=createtrth('th','Email Id');
+
+
+tr.append(th0,th1,th2,th3);
+thead.append(tr);
+
+var tbody=document.createElement('tbody');
+var tr=document.createElement('tr');
+var td0=createtrth('td','1');
+var td1=createtrth('td','John');
+var td2=createtrth('td','Doe');
+var td9=createtrth('td','Johndoe@gmail.com');
+
+tr.append(td0,td1,td2,td9);
+tbody.append(tr);
+
+var tr=document.createElement('tr');
+var td7=createtrth('td','2');
+var td3=createtrth('td','yashu');
+var td4=createtrth('td','waddatti');
+var td10=createtrth('td','Malateshwaddatti@gmail.com');
+
+tr.append(td7,td3,td4,td10);
+tbody.append(tr);
+
+var tr=document.createElement('tr');
+var td8=createtrth('td','3')
+var td5=createtrth('td','Mark');
+var td6=createtrth('td','Ota');
+var td11=createtrth('td','MarkOta@gmailcom');
+tr.append(td8,td5,td6,td11);
+tbody.append(tr);
+
+var tr=document.createElement('tr');
+var td12=createtrth('td','4');
+var td13=createtrth('td','Jacob');
+var td14=createtrth('td','pant');
+var td15=createtrth('td','Jacobpant@gmail.com');
+ tr.append(td12,td13,td14,td15);
+ tbody.append(tr);
+
+ var tr=document.createElement('tr');
+var td16=createtrth('td','5');
+var td17=createtrth('td','Larry');
+var td18=createtrth('td','Page');
+var td19=createtrth('td','Larrypage@gmail.com');
+ tr.append(td16,td17,td18,td19);
+ tbody.append(tr);
+
+
+
+
+table.append(thead,tbody);
+document.body.append(table);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function createtrth(elementname,value=""){
+var td=document.createElement(elementname);
+td.innerHTML=value;
+return td;
+	
+}
